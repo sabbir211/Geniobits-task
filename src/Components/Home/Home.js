@@ -2,15 +2,16 @@ import { faCommentDots } from '@fortawesome/free-regular-svg-icons';
 import { faGear, faHome, faNotEqual, faPeopleArrows, faPerson, faStopwatch, faSuitcaseRolling, faUserGraduate, faUsersLine } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import "./homeStyle.css"
 const Home = () => {
     return (
         <div class="drawer drawer-mobile ">
             <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content flex flex-col items-center justify-center">
+            <div class="drawer-content flex flex-col m-3 lg:m-12 border">
                 {/* Page content here  */}
                 <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-
+                <Outlet></Outlet>
             </div>
             <div class="drawer-side shadow-2xl rounded-3xl">
                 <label for="my-drawer-2" class="drawer-overlay"></label>
