@@ -28,7 +28,7 @@ const Login = () => {
                 <h1 className='text-center text-2xl font-semibold my-4'>Welcome back </h1>
                 <form onSubmit={verifyUser}>
                     <label htmlFor="email" className='block'>Enter email</label>
-                    <input type="email" name='email' placeholder="Type here" class="input input-bordered border-indigo-500 w-full max-w-xs focus:outline-none" />
+                    <input type="email" name='email' placeholder="Type here" className="input input-bordered border-indigo-500 w-full max-w-xs focus:outline-none" />
                     <input className='btn btn-primary px-4 my-5  block text-white' type="submit" value="Login" />
                 </form>
                 <p className='text-xl '>For testing use <span className='bg-gray-200 p-2 rounded-md'>Sincere@april.biz </span> </p>
