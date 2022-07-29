@@ -1,0 +1,8 @@
+.drawer-links li:hover{
+background: linear-gradient(to right,rgb(168 85 247), rgb(236 72 153));
+color: white;
+border-radius: 5px 50px 50px 5px;
+}
+.drawer-links li{
+font-size: 1.102rem;
+}
